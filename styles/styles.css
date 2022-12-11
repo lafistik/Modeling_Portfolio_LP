@@ -65,7 +65,6 @@ img {
 /* HEADER + MENU */
 
 header {
-  width: 100vw;
   background-color: var(--main-dark);
   color: var(--main-light);
   justify-content: space-between;
