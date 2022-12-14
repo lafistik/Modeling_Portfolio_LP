@@ -18,11 +18,13 @@
     <header class="flex-row">
       <div class="logo"><a href="#">NV</a></div>
       <ul class="menu flex-row">
-        <li class="menu-el"><a href="#">Intro</a></li>
-        <li class="menu-el"><a href="#">Portfolio</a></li>
-        <li class="menu-el"><a href="#">Measurements</a></li>
-        <li class="menu-el"><a href="#">Compcard</a></li>
-        <li class="menu-el"><a href="#">Contact</a></li>
+        <li class="menu-el"><a href="#intro">Intro</a></li>
+        <li class="menu-el"><a href="#portfolio">Portfolio</a></li>
+        <li class="menu-el"><a href="#compcard">Compcard</a></li>
+        <li class="menu-el">
+          <a href="#measurements">Measurements</a>
+        </li>
+        <li class="menu-el"><a href="#contact">Contact</a></li>
       </ul>
     </header>
 
@@ -37,7 +39,11 @@
               Commercial Model and Actor
             </p>
           </div>
-          <a href="#" class="btn btn-hero">Book Me Today</a>
+          <a
+            href="mailto:vladlennechaev@gmail.com?subject=Looking for a model"
+            class="btn btn-hero"
+            >Book Me Today</a
+          >
         </div>
         <div class="hero-img-box">
           <img
@@ -50,7 +56,7 @@
     </section>
 
     <!-- INTRO SECTION -->
-    <section class="intro-section container intro-grid">
+    <section class="intro-section container intro-grid" id="intro">
       <div class="intro-text">
         <h2 class="secondary-heading">Self <br />Introduction</h2>
         <p class="secondary-description">
@@ -82,7 +88,7 @@
     </section>
 
     <!-- PORTFOLIO SECTION -->
-    <section class="portfolio-section container">
+    <section class="portfolio-section container" id="portfolio">
       <h2 class="secondary-heading">
         Portfolio <br />
         Examples
@@ -137,7 +143,7 @@
       </div>
     </section>
 
-    <section class="section-compcard container">
+    <section class="section-compcard container" id="compcard">
       <img
         class="compcard-img"
         src="imgs/comp_card_img.png"
@@ -148,13 +154,15 @@
           Download <br />
           Compcard
         </h2>
-        <button class="btn">Download</button>
+        <a href="imgs/Nechaev_Vladlen_CompCard.png" download class="btn"
+          >Download</a
+        >
       </div>
     </section>
 
     <!-- MEASUREMENTS SECTION -->
 
-    <section class="section-measurements container">
+    <section class="section-measurements container" id="measurements">
       <img
         src="imgs/measure_img_1.jpg"
         alt="handsome guy walking and touching his hair"
@@ -184,7 +192,7 @@
 
     <!-- CONTACT INFO -->
 
-    <section class="container section-contact">
+    <section class="container section-contact" id="contact">
       <div class="contact-box">
         <img
           src="imgs/contact_img.jpg"
@@ -208,7 +216,11 @@
               <span>vladlennechaev@gmail.com</span>
             </div>
           </div>
-          <button class="btn">Reach out</button>
+          <a
+            class="btn"
+            href="mailto:vladlennechaev@gmail.com?subject=Looking for a model"
+            >Reach out</a
+          >
         </div>
       </div>
     </section>
@@ -216,9 +228,11 @@
     <!-- FOOTER -->
     <footer>
       <span class="footer-text">
-        Nechaev Vladlen, Commercial Model and Actor (c) 2022
+        Nechaev Vladlen, Commercial Model and Actor (c) 2023
       </span>
-      <img class="icon" src="icons/instagram_icon.svg" alt="instagram icon" />
+      <a href="https://www.instagram.com/vladlen.korea/" target="_blank"
+        ><img class="icon" src="icons/instagram_icon.svg" alt="instagram icon"
+      /></a>
     </footer>
 
     <script src="js/script.js"></script>
