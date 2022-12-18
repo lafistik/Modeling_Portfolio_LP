@@ -26,12 +26,14 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--main-dark);
   background-color: var(--main-light);
+  overflow-x: hidden;
 }
 
 section {
@@ -46,6 +48,7 @@ section {
 .flex-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .heading-primary {
@@ -78,6 +81,11 @@ img {
   cursor: pointer;
 }
 
+.btn-mobile-nav {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
 /* HEADER + MENU */
 
 header {
@@ -86,6 +94,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 3.2rem 6.4rem;
+  position: relative;
 }
 
 .menu {
@@ -125,10 +134,11 @@ header li a:active {
   border: none;
   background: none;
   cursor: pointer;
+  display: none;
 }
 .icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 4.4rem;
+  width: 4.4rem;
   color: var(--main-light);
 }
 
@@ -291,7 +301,7 @@ section a.btn:active {
 
 .contact-box {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1.6fr 1fr;
   align-items: center;
   gap: 3.2rem;
 }
