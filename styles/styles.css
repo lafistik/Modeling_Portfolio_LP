@@ -67,8 +67,18 @@ section {
   font-size: 2rem;
 }
 
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 img {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 .btn {
@@ -86,6 +96,43 @@ img {
   height: 4.4rem;
 }
 
+.popup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-img span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  z-index: inherit;
+}
+
+.popup-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+  max-height: 90%;
+  max-width: 90%;
+  z-index: 105;
+  object-fit: cover;
+}
+
 /* HEADER + MENU */
 
 header {
@@ -97,6 +144,7 @@ header {
   padding: 3.2rem 6.4rem;
   position: relative;
   height: 10rem;
+  z-index: 5;
 }
 
 .menu {

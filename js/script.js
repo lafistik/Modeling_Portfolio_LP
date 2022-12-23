@@ -3,6 +3,9 @@ const header = document.querySelector("header");
 const heroSection = document.querySelector(".hero-section");
 const body = document.querySelector("body");
 const menuEl = document.querySelectorAll(".menu-el");
+const images = document.querySelectorAll("img");
+const popup = document.querySelector(".popup-img");
+const closeBtn = document.querySelector(".popup-img span");
 
 btns.forEach(function (button) {
   button.addEventListener("click", function () {
@@ -14,6 +17,17 @@ menuEl.forEach(function (el) {
   el.addEventListener("click", function () {
     header.classList.remove("nav-open");
   });
+});
+
+images.forEach((image) => {
+  image.onclick = () => {
+    popup.style.display = "block";
+    document.querySelector(".popup-img img").src = image.getAttribute("src");
+  };
+});
+
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
 });
 
 const handler = (entries) => {
