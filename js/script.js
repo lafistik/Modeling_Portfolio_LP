@@ -28,5 +28,9 @@ const handler = (entries) => {
   }
 };
 
-const observer = new window.IntersectionObserver(handler);
+let options = {
+  threshold: 0.1,
+};
+
+const observer = new window.IntersectionObserver(handler, options);
 observer.observe(heroSection);
