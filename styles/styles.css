@@ -90,11 +90,13 @@ img {
 
 header {
   background-color: var(--main-dark);
+  opacity: 0.97;
   color: var(--main-light);
   justify-content: space-between;
   align-items: center;
   padding: 3.2rem 6.4rem;
   position: relative;
+  height: 10rem;
 }
 
 .menu {
@@ -145,6 +147,22 @@ header li a:active {
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
+
+/* STICKY NAV */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* .sticky-body {
+  padding-top: 10rem;
+} */
 
 /* HERO SECTION */
 

@@ -277,6 +277,13 @@
     padding: 3.6rem 1.8rem;
   }
 
+  header {
+    height: 6rem;
+  }
+
+  .sticky {
+    height: 6rem;
+  }
   /* header.flex-row {
     display: none;
   } */
